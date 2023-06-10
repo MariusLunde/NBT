@@ -13,7 +13,7 @@ const MainHeader = ({textStyles, headerStyles, navigation, mainText}: any) => {
         <Animated.View style={[styles.container, headerStyles]}>
             {navigation ? (
                 <TouchableOpacity style={styles.backButton} onPress={() => {nav.goBack()}}>
-                    <Text style={styles.backButtonText} > Back</Text>
+                    <Text style={styles.backButtonText} > {"<"} Back</Text>
                 </TouchableOpacity>
             ) :
                 (
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         height: 200
     },
     backButton: {
-        marginTop: 20,
+        marginTop: 25,
         height: 20,
         width: 80,
         left: 20

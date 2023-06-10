@@ -10,7 +10,7 @@ import React from "react";
 const Stack = createStackNavigator();
 
 export default function App() {
-    
+
     return (
         <GestureHandlerRootView
             style={{ flex: 1, backgroundColor: '#09090E' }}
